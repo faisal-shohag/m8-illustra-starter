@@ -1,3 +1,6 @@
+### Project Requirement 
+[Requirement Doc](https://docs.google.com/document/d/1cCEZSlULXCRgil7wy3nHvvBn-3zwx0zkH2KNsWRyrjU/edit?usp=sharing)
+
 ### Prompt to create json
 ```text
 Generate TWO JSON arrays.
