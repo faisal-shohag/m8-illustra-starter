@@ -1,3 +1,75 @@
+### Prompt to create json
+```text
+Generate TWO separate JSON arrays.
+
+========================
+DATASET 1: AI ART ITEMS
+========================
+Create an array of 15 objects representing AI-generated artworks.
+
+Each object MUST follow this exact schema:
+{
+  "id": number (start from 1, increment sequentially),
+  "title": string (creative, unique artwork title),
+  "imageUrl": string (valid public image URL, preferably from Pinterest or similar),
+  "prompt": string (detailed AI image generation prompt),
+  "category": string (must match one of the categories from dataset 2),
+  "model": string (choose from: "SDXL", "Midjourney v6", "DALL·E 3", "Stable Diffusion"),
+  "resolution": string (e.g., "1024x1024", "1280x720", "768x1024"),
+  "likes": number (random between 80–600),
+  "downloads": number (random between 20–150),
+  "createdAt": string (ISO date format, within last 7 days),
+  "tags": array of 3–5 relevant lowercase keywords
+}
+
+Rules:
+- Keep categories consistent with dataset 2
+- Make prompts descriptive and visually rich
+- Ensure variety (fantasy, sci-fi, cyberpunk, etc.)
+- Do NOT repeat titles or prompts
+- Output MUST be valid JSON (no comments)
+
+========================
+DATASET 2: CATEGORIES
+========================
+Create an array of category objects.
+
+Each object MUST follow this schema:
+{
+  "id": number,
+  "name": string,
+  "slug": string (kebab-case version of name)
+}
+
+Include EXACTLY these categories:
+- Sci-Fi
+- Pixel Art
+- Fantasy
+- Cyberpunk
+- Surreal
+- Vaporwave
+- Realistic
+- Minimal
+- Steampunk
+
+Rules:
+- IDs must start from 1
+- Slugs must be lowercase and hyphenated
+- Output MUST be valid JSON
+
+========================
+OUTPUT FORMAT
+========================
+Return the result as:
+
+1st JSON array (art items)
+2nd JSON array (categories)
+
+Do NOT add explanations.
+Do NOT wrap in markdown.
+Only output raw JSON.
+```
+
 ### Navbar
 
 ```jsx
